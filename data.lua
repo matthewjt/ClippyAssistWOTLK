@@ -3,7 +3,7 @@ if ClippyAssist == nil then ClippyAssist = {} end
 -- Some of this data is redundant, or can be calculated
 -- from other entries. They are cached here for performance.
 
-local path_data = "Interface/AddOns/ClippyAssistBCC/rc/"
+local path_data = "Interface/AddOns/ClippyAssistWOTLK/rc/"
 
 local data = {
 	Alert = {

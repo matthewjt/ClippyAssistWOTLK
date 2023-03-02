@@ -219,7 +219,7 @@ frame:SetScript("OnUpdate", function(self, elapsed)
 ------------------
 
 -- Set up text balloon frame.
-local path_balloon_texture = "Interface/AddOns/ClippyAssistBCC/rc/balloon.tga"
+local path_balloon_texture = "Interface/AddOns/ClippyAssistWOTLK/rc/balloon.tga"
 local balloon_corner_size = 15
 local balloon = CreateFrame("Frame", "ClippyBalloon", frame)
 balloon:Hide()
@@ -286,7 +286,7 @@ balloon_slice_C:SetTexture(path_balloon_texture)
 
 -- Text texture.
 balloon.text = balloon:CreateFontString(nil, "OVERLAY")
-balloon.text:SetFont("Interface/AddOns/ClippyAssistBCC/rc/ClippySans.ttf", 14)
+balloon.text:SetFont("Interface/AddOns/ClippyAssistWOTLK/rc/ClippySans.ttf", 14)
 balloon.text:SetTextColor(0, 0, 0)
 balloon.text:SetJustifyH("LEFT")
 balloon.text:SetJustifyV("TOP")
@@ -295,7 +295,7 @@ balloon.text:SetWidth(balloon_slice_C:GetWidth())
 balloon.text:SetText("")
 
 -- Balloon tip frame.
-local path_balloon_tip_texture = "Interface/AddOns/ClippyAssistBCC/rc/tip.tga"
+local path_balloon_tip_texture = "Interface/AddOns/ClippyAssistWOTLK/rc/tip.tga"
 local balloon_tip_size = 20
 local balloon_tip = CreateFrame("Frame", "BalloonTip", balloon)
 balloon_tip:SetSize(balloon_tip_size, balloon_tip_size)
@@ -630,7 +630,7 @@ function SlashCmdList.CLIPPY(msg, editBox)
 	msg, arg1 = strsplit(" ", msg)
 	if msg == "-help" or msg == "-h" or msg == "-?" then
 		print("You are currently using Clippy Assist v" ..
-			GetAddOnMetadata("ClippyAssistBCC", "Version") .. ".")
+			GetAddOnMetadata("ClippyAssistWOTLK", "Version") .. ".")
 		print("It looks like you're trying to use Clippy Assist. " .. 
 			"Would you like some help with that?")
 		print("  -help: Shows this text.")
