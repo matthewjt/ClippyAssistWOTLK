@@ -1,0 +1,15 @@
+## Interface: 90001
+## Title: Clippy Assist WOTLK
+## Author: Ernest Gu - Updated by Matt Tomasov
+## Version: WOTLK 1.0
+## Notes: Would you like some help with that?
+## DefaultState: Enabled
+## LoadOnDemand: 0
+## SavedVariables: ClippyAssistData
+
+# external libraries
+embeds.xml
+
+# core files
+data.lua
+ClippyAssistBCC.lua
